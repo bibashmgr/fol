@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS} from "react-scroll";
+import { AiOutlineBars } from "react-icons/ai";
 
 export const Nav = styled.nav`
     background-color: #130F40;
@@ -11,6 +12,7 @@ export const Nav = styled.nav`
     align-items: center;
     position: sticky;
     top: 0;
+    transition: all 0.3s ease-in-out;
 `
 export const NavContainer = styled.div`
     height: 80px;
@@ -52,6 +54,10 @@ export const BarsIcon = styled.div`
     }
 `
 
+export const Bars = styled(AiOutlineBars)`
+    cursor: pointer;
+`
+
 export const NavMenu = styled.ul`
     display: flex;
     justify-content: space-between;
@@ -70,15 +76,24 @@ export const NavItem = styled.li`
 export const NavLink = styled(LinkS)`
     color: #ECF0F1;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
+    cursor: pointer;
 `
 
 export const NavButton = styled(LinkS)`
     color: #130F40;
     background-color: #ECF0F1;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 600;
     padding: 7.5px 15px;
-    border-radius: 2.5px;
+    border: 2.5px solid #ECF0F1;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+        color: #ECF0F1;
+        background-color: #130F40;
+    }
 `

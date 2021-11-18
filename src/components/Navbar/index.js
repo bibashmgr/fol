@@ -1,12 +1,11 @@
 // dependencies
 // dependencies
 import React from 'react';
-import { AiOutlineBars } from "react-icons/ai";
 
 // components
-import {Nav, NavContainer, NavLogo, BarsIcon, NavMenu, NavItem, NavLink, NavButton} from './NavbarElements';
+import {Nav, NavContainer, NavLogo, BarsIcon, Bars, NavMenu, NavItem, NavLink, NavButton} from './NavbarElements';
 
-const Navbar = () => {
+const Navbar = ({toggleEffect}) => {
     return (
         <Nav>
             <NavContainer>
@@ -14,7 +13,7 @@ const Navbar = () => {
                     bibash
                 </NavLogo>
                 <BarsIcon>
-                    <AiOutlineBars />
+                    <Bars onClick={toggleEffect}/>
                 </BarsIcon>
                 <NavMenu>
                     <NavItem>
