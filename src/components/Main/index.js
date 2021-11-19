@@ -16,7 +16,7 @@ const Main = () => {
                     <MainSubHeading>
                         A web developer from Nepal
                     </MainSubHeading>
-                    <MainButton to="./files/resume.docx" target="_blank" download>
+                    <MainButton to="./files/resume.pdf" target="_blank" download>
                         Download CV
                     </MainButton>
                 </MainBox>
