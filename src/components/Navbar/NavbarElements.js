@@ -88,7 +88,7 @@ export const NavButton = styled(LinkS)`
     font-weight: 600;
     padding: 7.5px 15px;
     border: 2.5px solid #ECF0F1;
-    border-radius: 25px;
+    border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
 

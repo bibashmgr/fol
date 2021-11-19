@@ -56,7 +56,7 @@ export const SideButton = styled(LinkS)`
     text-decoration: none;
     padding: 7.5px 15px;
     border: 2.5px solid #130F40;
-    border-radius: 25px;
+    border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
 
