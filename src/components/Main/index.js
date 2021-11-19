@@ -16,12 +16,12 @@ const Main = () => {
                     <MainSubHeading>
                         A web developer from Nepal
                     </MainSubHeading>
-                    <MainButton to={{ pathname: "https://download.com" }}>
+                    <MainButton to="./files/resume.docx" target="_blank" download>
                         Download CV
                     </MainButton>
                 </MainBox>
                 <MainIcons>
-                    <IconLink href="https://www.linkedin.com/in/bibashmgr/" target='_blank' aria-label='LinkedIn'>
+                    <IconLink href="https://www.linkedin.com/in/bibashmgr" target='_blank' aria-label='LinkedIn'>
                         <LinkedinIcon />
                     </IconLink>
                     <IconLink href="https://twitter.com/bibashmgr21" target='_blank' aria-label='Twitter'>
