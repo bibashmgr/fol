@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Main from '../components/Main';
+import About from '../components/About';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,8 @@ const Home = () => {
         <>
             <Navbar toggleEffect={toggleEffect} />
             <Sidebar isOpen={isOpen} toggleEffect={toggleEffect} />
-            <Main />
+            <Main id='home' isOpen={isOpen} />
+            <About id='about' isOpen={isOpen} />
         </>
     )
 }

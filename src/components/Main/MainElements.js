@@ -8,7 +8,7 @@ export const MainSection = styled.section `
     color: #ecf0f1;
     width: 100%;
     height: calc(100vh - 80px);
-`;
+`
 
 export const MainContainer = styled.div `
     margin: 0px 100px;
@@ -21,7 +21,7 @@ export const MainContainer = styled.div `
     @media screen and (max-width: 796px) {
         margin: 0px 25px;
     }
-`;
+`
 
 export const MainBox = styled.div `
     margin: 0px 112.5px;
@@ -29,9 +29,13 @@ export const MainBox = styled.div `
     @media screen and (max-width: 992px) {
         margin: 0px 0px;
     }
-`;
+`
 
 export const MainHeading = styled.div `
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     font-size: 3rem;
     font-weight: 600;
     line-height: 1.25;
@@ -43,15 +47,21 @@ export const MainHeading = styled.div `
     @media screen and (max-width: 796px) {
         font-size: 2rem;
     }
-`;
+`
 
-export const MainHeadingOne = styled.div ``;
-export const MainHeadingTwo = styled.div ``;
+export const MainHeadingOne = styled.div `
+    cursor: crosshair;
+`
+
+export const MainHeadingTwo = styled.div `
+    cursor: crosshair;
+`
+
 export const MainSubHeading = styled.div `
     font-size: 1rem;
     font-weight: 400;
     opacity: 80%;
-`;
+`
 
 export const MainButton = styled(LinkR)`
     margin-top: 50px;
@@ -71,28 +81,30 @@ export const MainButton = styled(LinkR)`
         color: #ecf0f1;
         background-color: #130f40;
     }
-`;
+`
 
 // Icons: 
 export const MainIcons = styled.div `
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     font-size: 1.5rem;
-`;
+`
 
 export const IconLink = styled.a`
     text-decoration: none;
     color: #ECF0F1;
-`;
+`
 
 export const LinkedinIcon = styled(FaLinkedin)`
     cursor: pointer;
-`;
+`
 
 export const TwitterIcon = styled(FaTwitter)`
     cursor: pointer;
-`;
+`
 
 export const GithubIcon = styled(FaGithub)`
     cursor: pointer;
-`;
+`

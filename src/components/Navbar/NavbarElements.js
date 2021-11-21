@@ -6,6 +6,7 @@ import { AiOutlineBars } from "react-icons/ai";
 
 export const Nav = styled.nav`
     background-color: #130F40;
+    width: 100%;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -13,6 +14,7 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     transition: all 0.3s ease-in-out;
+    z-index: 10;
 `
 export const NavContainer = styled.div`
     height: 80px;
