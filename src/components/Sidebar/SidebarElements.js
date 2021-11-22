@@ -8,7 +8,7 @@ export const Side = styled.aside`
     height: 100%;
     width: 100%;
     z-index: 99;
-    position: absolute;
+    position: fixed;
     opacity: ${({isOpen}) => (isOpen ? '100%' : '0%')};
     top: ${({isOpen}) => (isOpen ? '0%' : '-100%')};;
     transition: all 0.3s ease-in-out;
