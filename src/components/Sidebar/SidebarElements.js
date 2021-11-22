@@ -10,7 +10,7 @@ export const Side = styled.aside`
     z-index: 99;
     position: absolute;
     opacity: ${({isOpen}) => (isOpen ? '100%' : '0%')};
-    top: ${({isOpen}) => (isOpen ? '0' : '-100%')};;
+    top: ${({isOpen}) => (isOpen ? '0%' : '-100%')};;
     transition: all 0.3s ease-in-out;
 `
 

@@ -1,6 +1,6 @@
 // dependencies
 import React from 'react';
-import { BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
 // pages
 import Home from './pages/Home';
@@ -12,9 +12,11 @@ const App = () => {
 
   return (
     <>
-      <Router>
-        <Home />
-      </Router>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

@@ -6,7 +6,7 @@ import {AboutSection, AboutContainer, AboutHeading, AboutMainHeading, AboutSubHe
 
 const About = () => {
     return (
-        <AboutSection>
+        <AboutSection id='about'>
             <AboutContainer>
                 <AboutHeading>
                     <AboutMainHeading>

@@ -1,6 +1,5 @@
 // dependencies
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS} from "react-scroll";
 import { AiOutlineBars } from "react-icons/ai";
 
@@ -28,18 +27,23 @@ export const NavContainer = styled.div`
         margin: 0px 25px;
     }
 `
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled.div`
     color: #ECF0F1;
     font-size: 2rem;
     font-weight: 600;
     text-decoration: none;
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 0px 25px;
 
     @media screen and (max-width:796px){
         font-size: 1.5rem;
     }
+`
+
+export const Logo = styled.div`
+    cursor: pointer;
 `
 
 export const BarsIcon = styled.div`

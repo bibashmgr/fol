@@ -19,8 +19,8 @@ const Home = () => {
         <>
             <Navbar toggleEffect={toggleEffect} />
             <Sidebar isOpen={isOpen} toggleEffect={toggleEffect} />
-            <Main id='home' isOpen={isOpen} />
-            <About id='about' isOpen={isOpen} />
+            <Main isOpen={isOpen} />
+            <About isOpen={isOpen} />
         </>
     )
 }

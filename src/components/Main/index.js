@@ -6,7 +6,7 @@ import {MainSection, MainContainer,MainBox, MainHeading, MainHeadingOne, MainHea
 
 const Main = () => {
     return (
-        <MainSection>
+        <MainSection id='home'>
             <MainContainer>
                 <MainBox>
                     <MainHeading>
