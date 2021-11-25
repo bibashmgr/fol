@@ -25,10 +25,10 @@ const Navbar = ({toggleEffect}) => {
                         <NavLink to='about' smooth={true} duration={500} spy={true} exact="true" offset={-80}>About</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to='projects'>Projects</NavLink>
+                        <NavLink to='projects' smooth={true} duration={500} spy={true} exact="true" offset={-80}>Projects</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavButton to='contact'>Contact</NavButton>
+                        <NavButton to='contact' smooth={true} duration={500} spy={true} exact="true" offset={-80}>Contact</NavButton>
                     </NavItem>   
                 </NavMenu>
             </NavContainer>

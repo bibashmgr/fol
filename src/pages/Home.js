@@ -7,6 +7,8 @@ import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import Main from '../components/Main';
 import About from '../components/About';
+import Projects from '../components/Projects';
+// import Contact from '../components/Contact';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,8 +21,10 @@ const Home = () => {
         <>
             <Navbar toggleEffect={toggleEffect} />
             <Sidebar isOpen={isOpen} toggleEffect={toggleEffect} />
-            <Main isOpen={isOpen} />
-            <About isOpen={isOpen} />
+            <Main />
+            <About />
+            <Projects />
+            {/* <Contact /> */}
         </>
     )
 }
