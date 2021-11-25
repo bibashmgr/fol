@@ -1,9 +1,12 @@
 import React from 'react';
 
 // components
-import {CardBox, CardHead, CardImage, CardBody, CardText, CardTitle, CardInfo, CardButtons, CardReadButton, CardDemoButton} from './CardElements';
+import {CardBox, CardHead, CardImage, CardBody, CardText, CardTitle, CardInfo, CardButtons, CardGitButton, GitText, CardDemoButton} from './CardElements';
 
-const Card = ({name, info, img}) => {
+// icons
+import { FaGithub } from 'react-icons/fa';
+
+const Card = ({name, info, img, github, demo}) => {
     return (
             <CardBox>
                 <CardHead>
@@ -15,8 +18,11 @@ const Card = ({name, info, img}) => {
                         <CardInfo>{info}</CardInfo>
                     </CardText>
                     <CardButtons>
-                        <CardReadButton>Read more</CardReadButton>
-                        <CardDemoButton>Live Demo</CardDemoButton>
+                        <CardGitButton href={github} target='_blank'>
+                            <FaGithub />
+                            <GitText>Github</GitText>
+                        </CardGitButton>
+                        <CardDemoButton href={demo} target='_blank'>Live Demo</CardDemoButton>
                     </CardButtons>
                 </CardBody>
             </CardBox>

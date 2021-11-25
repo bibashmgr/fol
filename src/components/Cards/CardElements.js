@@ -39,8 +39,10 @@ export const CardButtons = styled.div`
     justify-content: flex-start;
     margin-top: 10px;
 `
-export const CardReadButton = styled.div`
-    display: inline-block;
+export const CardGitButton = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px 10px;
     font-size: 0.75rem;
     font-weight: 600;
@@ -57,7 +59,12 @@ export const CardReadButton = styled.div`
         background-color: #130f40;
     }
 `
-export const CardDemoButton = styled.div`
+
+export const GitText =styled.div`
+    padding-left: 2.5px;
+`
+
+export const CardDemoButton = styled.a`
     display: inline-block;
     padding: 5px 10px;
     font-size: 0.75rem;
