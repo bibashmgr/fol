@@ -21,7 +21,7 @@ const Projects = () => {
                     <Cards></Cards>
                 </ProjectsBody>
                 <ProjectsMoreButton>
-                    <MoreButton href="https://error404s.netlify.app/">See More</MoreButton>
+                    <MoreButton href="https://www.error404s.tk/" target="_blank">See More</MoreButton>
                 </ProjectsMoreButton>
             </ProjectsContainer>
         </ProjectsSection>

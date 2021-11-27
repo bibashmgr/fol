@@ -26,7 +26,7 @@ const About = () => {
                                 Web developer based on Nepal, with an experience in designing and developing user friendly websites and  web apps. Also, I am good at solving complex problems.
                             </AboutInfo>
                             <AboutButtonBox>
-                                <AboutButton>
+                                <AboutButton href="https://www.error404s.tk/" target="_blank">
                                     Read more
                                 </AboutButton>
                             </AboutButtonBox>

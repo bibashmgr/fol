@@ -21,12 +21,14 @@ export const FormGroup = styled.div`
 export const FormLabel = styled.label`
     font-size: 1rem;
     font-weight: 500;
+    cursor: pointer;
 `
 
 export const FormInput = styled.input`
     background-color: #ecf0f1;
     border: none;
     outline: none;
+    cursor: pointer;
 `
 
 export const FormTextArea = styled.textarea`
@@ -35,6 +37,7 @@ export const FormTextArea = styled.textarea`
     outline: none;
     height: 10rem;
     resize: none;
+    cursor: pointer;
 `
 
 export const FormButton = styled.input`

@@ -5,7 +5,7 @@ export const projects = [
         info:'A website that provide a platform to share information and memories of sports meet events.',
         img:'./images/projects/gcesports.png',
         github:'https://github.com/bibashmgr/gcesports',
-        demo:'https://error404s.netlify.app/'
+        demo:'https://www.error404s.tk/'
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ export const projects = [
         info:'A website for booking buses and jeeps to travel around Nepal.',
         img:'./images/projects/janiho.png',
         github:'https://github.com/bibashmgr/JaniHo',
-        demo:'https://error404s.netlify.app/'
+        demo:'https://www.error404s.tk/'
     },
     {
         id: 3,

@@ -107,7 +107,7 @@ export const AboutButtonBox = styled.div`
     width: 100%;
 `
 
-export const AboutButton = styled.div`
+export const AboutButton = styled.a`
     margin-top: 50px;
     display: inline-block;
     padding: 7.5px 15px;
