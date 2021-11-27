@@ -2,6 +2,7 @@
 import styled from "styled-components";
 
 export const ProjectsSection = styled.section`
+    padding-top: 10vh;
     background-color: #130f40;
     color: #ecf0f1;
     width: 100%;

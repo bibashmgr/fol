@@ -8,7 +8,7 @@ import Sidebar from '../components/Sidebar';
 import Main from '../components/Main';
 import About from '../components/About';
 import Projects from '../components/Projects';
-// import Contact from '../components/Contact';
+import Contact from '../components/Contact';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,7 @@ const Home = () => {
             <Main />
             <About />
             <Projects />
-            {/* <Contact /> */}
+            <Contact />
         </>
     )
 }

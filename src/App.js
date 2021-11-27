@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
 // pages
 import Home from './pages/Home';
-import Cards from './components/Cards';
+import Form from './components/Form';
 
 // css
 import './App.css';
@@ -16,7 +16,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/cards" element={<Cards />} />
+          <Route path="/form" element={<Form />} />
         </Routes>
       </BrowserRouter>
     </>
