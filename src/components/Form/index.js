@@ -1,25 +1,83 @@
 import React from 'react';
+import { useState, useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 // components
 import { FormContainer, FormGroup, FormLabel, FormInput, FormTextArea, FormButton } from './FormElements';
 
 const Form = () => {
 
+    const [values, setValues] = useState({
+        email:'',
+        projectname:'',
+        message:''
+    });
+
+    const form = useRef();
+
+    const handleChange = (e) => {
+        const {name, value} = e.target;
+        setValues({...values, [name]:value});
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        let errors = {};
+
+        document.getElementById("email-box").style.border = '2.5px solid #ecf0f1';
+        document.getElementById("projectname-box").style.border = '2.5px solid #ecf0f1';
+        document.getElementById("message-box").style.border = '2.5px solid #ecf0f1';
+
+        if(!values.email){
+            errors.email = "Email is required";
+            document.getElementById("email-box").style.border = '2.5px solid #e74c3c';
+        } else if (!/\S+@\S+\.\S+/.test(values.email)) {
+            errors.email = "Invalid Email";
+            document.getElementById("email-box").style.border = '2.5px solid #e74c3c';
+        }
+
+        if(!values.projectname.trim()){
+            errors.projectname = "Project Name is required";
+            document.getElementById("projectname-box").style.border = '2.5px solid #e74c3c';
+        }
+
+        if(!values.message){
+            errors.message = "Message is required";
+            document.getElementById("message-box").style.border = '2.5px solid #e74c3c';
+        }
+
+        if(Object.keys(errors).length === 0){
+            emailjs.sendForm('service_41vetvs', 'template_zo7vzqx', form.current, 'user_GtCmdWxCFHFTEgl0zImy8')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+            
+            setValues({
+                email:'',
+                projectname:'',
+                message:''
+            })
+        }
+    };
+
     return (
-        <FormContainer>
-            <FormGroup onClick={(e) => {document.getElementById("email").focus();}}>
+        <FormContainer ref={form} onSubmit={handleSubmit}>
+            <FormGroup onClick={() => {document.getElementById("email").focus();}} id="email-box">
                 <FormLabel>Email</FormLabel>
-                <FormInput id="email" name="email" type="email"></FormInput>
+                <FormInput id="email" name="email" type="text" onChange={handleChange} value={values.email}></FormInput>
             </FormGroup>
-            <FormGroup onClick={(e) => {document.getElementById("projectname").focus();}}>
+            <FormGroup onClick={() => {document.getElementById("projectname").focus();}} id="projectname-box">
                 <FormLabel>Project Name</FormLabel>
-                <FormInput id="projectname" name="projectname" type="text"></FormInput>
+                <FormInput id="projectname" name="projectname" type="text" onChange={handleChange} value={values.projectname}></FormInput>
             </FormGroup>
-            <FormGroup style={{height:'10rem'}} onClick={(e) => {document.getElementById("message").focus();}}>
+            <FormGroup style={{height:'10rem'}} onClick={() => {document.getElementById("message").focus();}} id="message-box">
                 <FormLabel>Message</FormLabel>
-                <FormTextArea id="message" name="message"></FormTextArea>
+                <FormTextArea id="message" name="message" onChange={handleChange} value={values.message}></FormTextArea>
             </FormGroup>
-            <FormButton type='submit' value='Send Message'></FormButton>
+            <FormButton type="submit" value="Send Message"></FormButton>
         </FormContainer>
     )
 }

@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 export const FormContainer = styled.form`
+    width: 100%;
     background-color: #130f40;
-    width: 50%;
-    padding: 25px;
+    color: #130f40;
 `
 export const FormGroup = styled.div`
     background-color: #ecf0f1;
     height: 5rem;
-    border: 2px solid #130F40;
+    border: 2.5px solid #ecf0f1;
+    outline: none;
     border-radius: 10px;
-    margin: 25px;
+    margin: 25px 0px;
     padding: 12.5px 25px;
     display: flex;
     flex-direction: column;
@@ -38,7 +39,6 @@ export const FormTextArea = styled.textarea`
 
 export const FormButton = styled.input`
     margin-top: 25px;
-    margin-left: 27.5px;
     display: inline-block;
     padding: 7.5px 15px;
     font-size: 1rem;

@@ -45,7 +45,8 @@ export const ProjectsBody = styled.div`
 export const ProjectsMoreButton = styled.div`
 `
 
-export const MoreButton = styled.div`
+export const MoreButton = styled.a`
+    text-decoration: none;
     color: #ECF0F1;
     background-color: #130F40;
     font-size: 0.75rem;
