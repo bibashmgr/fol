@@ -10,6 +10,7 @@ export const CardBox = styled.div`
 
     @media screen and (max-width:796px){
         width: 300px;
+        height: 46vh;
     }
 `
 export const CardHead = styled.div``
