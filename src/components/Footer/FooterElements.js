@@ -3,8 +3,9 @@ import styled from "styled-components";
 import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 
 export const FooterContainer = styled.footer`
-    height: 30vh;
+    height: 25vh;
     display: flex;
+    opacity: 0.75;
     background-color: rgba(236, 240, 241, 0.75);
     flex-direction: column;
     justify-content: space-evenly;
@@ -13,7 +14,7 @@ export const FooterContainer = styled.footer`
 
 export const FooterHead = styled.div`
     color: #130F40;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -21,7 +22,7 @@ export const FooterHead = styled.div`
     padding: 0px 25px;
 
     @media screen and (max-width:796px){
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 `
 

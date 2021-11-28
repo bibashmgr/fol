@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const ContactSection = styled.section`
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     background-color: #130f40;
     color: #ecf0f1;
     width: 100%;
