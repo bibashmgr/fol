@@ -17,7 +17,7 @@ export const projects = [{
     {
         id: 3,
         name: 'Mero Projects',
-        info: 'A website which contains serval mini-projects that are created while doing a self-study on reactjs.',
+        info: 'A website which contains mini-projects that are created while doing a self-study on reactjs.',
         img: './images/projects/mero-projects.png',
         github: 'https://github.com/bibashmgr/my-projects',
         demo: 'https://mero-projects.netlify.app/',
