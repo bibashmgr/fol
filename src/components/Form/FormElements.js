@@ -40,7 +40,7 @@ export const FormTextArea = styled.textarea`
     cursor: pointer;
 `
 
-export const FormButton = styled.input`
+export const FormButton = styled.button`
     margin-top: 25px;
     display: inline-block;
     padding: 7.5px 15px;

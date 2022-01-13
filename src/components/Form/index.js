@@ -77,7 +77,7 @@ const Form = () => {
                 <FormLabel>Message</FormLabel>
                 <FormTextArea id="message" name="message" onChange={handleChange} value={values.message}></FormTextArea>
             </FormGroup>
-            <FormButton type="submit" value="Send Message"></FormButton>
+            <FormButton type="submit">Send Message</FormButton>
         </FormContainer>
     )
 }
