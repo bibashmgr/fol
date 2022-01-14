@@ -14,7 +14,7 @@ const Footer = () => {
                 <IconLink href="https://www.linkedin.com/in/bibashmgr" target='_blank' aria-label='LinkedIn'>
                         <LinkedinIcon />
                 </IconLink>
-                <IconLink href="https://twitter.com/bibashmgr21" target='_blank' aria-label='Twitter'>
+                <IconLink href="https://twitter.com/_bibashmagar_" target='_blank' aria-label='Twitter'>
                     <TwitterIcon />
                 </IconLink>
                 <IconLink href="https://github.com/bibashmgr" target='_blank' aria-label='Github'>
@@ -22,7 +22,7 @@ const Footer = () => {
                 </IconLink>
             </FooterLinks>
             <FooterRights>
-                Copyright 2021 ©️ bibashmagar
+                Copyright 2022 ©️ bibashmagar
             </FooterRights>
         </FooterContainer>
     )
