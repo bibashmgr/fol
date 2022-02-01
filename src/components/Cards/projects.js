@@ -17,7 +17,7 @@ export const projects = [{
     {
         id: 3,
         name: 'Mini EShop',
-        info: 'An mini-ecommerce site for digital products which is created using reactjs & @reduxjs/toolkit.',
+        info: 'A mini version ecommerce site for digital products created using reactjs & @reduxjs/toolkit.',
         img: './images/projects/eshop.png',
         github: 'https://github.com/bibashmgr/Mini-EShop',
         demo: 'https://mini-eshop.netlify.app/',
